@@ -11,12 +11,11 @@
 }
 
 /* nav bar  */
-
-nav{
+.navigation-bar{
     padding: auto;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 nav .logo{
     padding: 5px;
@@ -105,7 +104,8 @@ button:hover{
 /* meet to speakers  */
 
 .speakers{
-    padding:120px 0;
+    display: flex;
+    justify-content: space-around;
     background:#ffffff;
 }
 .section-title{
@@ -176,3 +176,69 @@ button:hover{
     line-height:1.7;
 }
 
+
+
+/* offer cards  */
+.offer-cards{
+    margin-top: 40px;
+}
+.offer-cards .pricing-cards{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 40px 60px;
+    text-align: left;
+}
+.card p{
+    font-size: 12px;
+    color: #b7b7b7;
+}
+/* bookmark here  */
+.card li{
+    margin-bottom: 5px;
+    color: #b7b7b7;
+}
+li::marker{
+    color: #60A5FA;
+}
+
+ /* buttons  */
+.plan{
+    border-radius: 10px;
+    margin: 30px 0px;
+    padding: 15px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 12px;
+}
+.plan.standard{
+    border: 1px solid #2563EB;
+    color: #2563EB;
+    background-color: #fff;
+}
+.plan.standard:hover{
+    background-color: #f3f3f3;
+}
+.plan.pro{
+    border: none;
+    color: #ffffff;
+    background-color: #2563EB;
+}
+.plan.pro:hover{
+    background-color: #2061eeed;
+}
+.plan.team{
+    color: #000000;
+    background-color: #ffffff;
+}
+.plan.team:hover{
+    background-color: #f3f3f3;
+}
